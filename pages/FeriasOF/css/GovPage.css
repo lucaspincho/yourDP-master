@@ -1,0 +1,122 @@
+.container{
+    padding-bottom: 77px;
+}
+
+.icon-GOV {
+    text-align: center;
+    margin-top: -7vw;
+    margin-bottom: -6vw;
+}
+
+.iconGOV {
+    width:35vw;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 8vw;
+}
+
+.gridIcons {
+    text-align: center;
+    display: grid;
+    text-decoration: underline;
+    color: #04488d;
+}
+
+.icon {
+    width: 33vw;
+    margin-bottom: 1vw;
+}
+
+
+.activeItem path{
+    fill: #2D1CC6 !important;
+    stroke: #2D1CC6 !important;
+}
+
+
+.card {
+    position: relative;
+    text-align: center;
+    color: white;
+    padding-bottom: 77px;
+  }
+
+  .image {
+    width: 95%;
+    height: auto;
+  }
+
+  .text {
+    position: absolute;
+    top: 10%;
+    left: 31%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+  }
+  .text0 {
+      position: absolute;
+      top: 23%;
+      left: 23%;
+      transform: translate(-50%, -50%);
+      font-size: 16px;
+      color: #c3c3c3;
+    }
+    .text1 {
+      position: absolute;
+      top: 23%;
+      left: 60%;
+      transform: translate(-50%, -50%);
+      font-size: 16px;
+      color: #c3c3c3;
+    }
+    .text2 {
+      position: absolute;
+      top: 32%;
+      left: 17%;
+      transform: translate(-50%, -50%);
+      font-size: 16px;
+      flex-direction: row;
+      display: flex;
+    }
+    .text3 {
+      position: absolute;
+      top: 35%;
+      left: 69%;
+      transform: translate(-50%, -50%);
+      font-size: 16px;
+      text-align: left;
+    }
+    .text4 {
+      position: absolute;
+      top: 50%;
+      left: 25.5%;
+      transform: translate(-50%, -50%);
+      font-size: 16px;
+      color: #c3c3c3;
+    }
+    .text5 {
+      position: absolute;
+      top: 50%;
+      left: 72.5%;
+      transform: translate(-50%, -50%);
+      font-size: 16px;
+      color: #c3c3c3;
+      width: 148px;
+    }
+    .text6 {
+      position: absolute;
+      top: 58.5%;
+      left: 22.8%;
+      transform: translate(-50%, -50%);
+      font-size: 16px;
+    }
+    .text7 {
+      position: absolute;
+      top: 58.5%;
+      left: 67%;
+      transform: translate(-50%, -50%);
+      font-size: 16px;
+    }

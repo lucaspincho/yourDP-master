@@ -1,0 +1,93 @@
+.contentForm{
+  
+  
+  
+  padding-bottom: 75px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 1rem;
+
+  width: calc(100vw - 2rem);
+  
+}
+
+.input-field {
+  background: #F7F7F9;
+  border-radius: 14px;
+
+  width: 305px;
+  height: 56px;
+
+  padding-left: 1rem;
+}
+
+.divInput{
+  display: flex;
+  flex-direction: column;
+}
+
+.inputFerias{
+  background: #F7F7F9;
+  border-radius: 14px;
+
+  width: 90%;
+  height: 56px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+
+.inputFerias h1{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 14px;
+  color: #868696;
+}
+
+input::placeholder {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 14px;
+  color: #868696;
+  padding-left: 0.4rem;
+}
+
+.btn {
+  display: block;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  width: 335px;
+  height: 56px;
+  background: #2D1CC6;
+  border-radius: 16px;
+  color: #fff;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+}
+
+h2 {
+  text-align: center;
+  align-items: center;
+  color: #2D1CC6;
+}
+
+/* Estilos para tornar o formulário responsivo em telas menores */
+@media screen and (max-width: 480px) {
+  .form {
+    padding: 10px;
+  }
+}

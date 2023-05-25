@@ -1,0 +1,51 @@
+.bottomBar {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+
+    height: 75px;
+    background: #FFFFFF;
+    box-shadow: 4px 8px 10px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30.5px 30.5px 0px 0px;
+
+    z-index: 1000;
+}
+
+.bottomBar nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    gap: 2.5rem;
+    padding: 0;
+}
+
+.bottomBar nav ul li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+    gap: 0.2rem;
+}
+
+.bottomBar nav ul li a{
+    color: #9E9E9E;
+    font-size: 12px;
+}
+
+
+
+
+.activeItem span a{
+    color: #2D1CC6 !important;
+    font-weight: 700;
+}
+
+.activeItem svg {
+    fill: #2D1CC6;
+}
+.activeItem svg path{
+    stroke: #2D1CC6;
+}

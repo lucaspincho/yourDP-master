@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/Login/login.css">
+
+    <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
+
+
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="msapplication-TileImage" content="/img/favicon.png">
+    <meta name="msapplication-TileColor" content="#31506F">
+    <meta name="theme-color" content="#4D5360" />
+    <link rel="shortcut icon" sizes="192x192" href="/img/favicon.png">
+    <link rel="shortcut icon" sizes="128x128" href="/img/favicon.png">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="PWA Teste">
+    <link rel="apple-touch-icon" href="/img/favicon.png">
+    <link rel="apple-touch-icon" href="touch-icon-iphone.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/img/favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="/img/favicon.png">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="msapplication-starturl" content="/index.html">
+
+    <link rel="manifest" href="./manifest.json">
+
+
+    <title>YourDP</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="logoContent">
+            <img src="./img/Logo.webp" alt="" srcset="">
+        </div>
+
+        <div class="formContent">
+
+            <div class="formContent" action="">
+
+                <input id="emailUser" type="email" placeholder="Email" required>
+                <input id="passwordUser" type="password" placeholder="Senha" required>
+
+                <span class="lostPassword"><a href="#">Esqueceu a senha?</a></span>
+
+
+
+                <button id="btnLogin" class="btnLogin">Entrar</button>
+            </div>
+
+            <!-- <a href="./pages/Home/Home.html">Entrar</a> -->
+        </div>
+
+    </div>
+
+
+
+    <script src="./pages/Home/js/localCompany.js"></script>
+    <script>
+
+
+
+        const btnLogin = document.getElementById("btnLogin")
+
+
+
+        btnLogin.addEventListener('click', () => {
+
+            const emailUser = document.getElementById("emailUser");
+            const passwordUser = document.getElementById("passwordUser");
+
+            const emailUserValue = emailUser.value;
+            const passwordUserValue = passwordUser.value
+
+            const emailUserData = USER_DATA.email;
+            const passwordUserData = USER_DATA.password;
+
+            console.log(emailUserData)
+            console.log(emailUserValue + "sd")
+
+            if (emailUserValue == emailUserData && passwordUserValue == passwordUserData) {
+                window.alert("Bem vindo")
+                window.location.href = "https://yourdp.netlify.app/pages/home/home";
+            } else {
+                window.alert("Não deu certo")
+            }
+        })
+
+    </script>
+
+    <script src="./service-worker.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function () {
+                navigator.serviceWorker.register('/service-worker.js').then(function (registration) {
+                    console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                }, function (err) {
+                    console.log('ServiceWorker registration failed: ', err);
+                });
+            });
+        }
+    </script>
+
+</body>
+
+</html>
